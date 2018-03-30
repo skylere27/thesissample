@@ -3,4 +3,5 @@
     <string name="facebook_app_id">447524118997000</string>
     <string name="fb_login_protocol_scheme">fb447524118997000</string>
     <string name="title_activity_home">Home</string>
+    <string name="title_activity_permissions">Permissions</string>
 </resources>

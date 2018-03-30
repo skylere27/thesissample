@@ -37,7 +37,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // THIS IS THE CALL TO ACCESS PERMISSIONS
                 LoginManager.getInstance().logInWithReadPermissions(MainActivity.this, Arrays.asList("public_profile"));
-                Intent intent = new Intent(MainActivity.this, Home.class); // goes to Home
+                // want to access more permissions???
+                Intent intent = new Intent(MainActivity.this, Permissions.class); // goes to Permissions
                 startActivity(intent);
             };
         });
@@ -57,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("Login Result", "DENIED: " + s);
                 }
                 // Want it to switch pages after login and put it here but doesn't even access it here...
-//                Intent intent = new Intent(MainActivity.this, Home.class); //creates a new page
+//                Intent intent = new Intent(MainActivity.this, Permissions.class); //creates a new page
 //                startActivity(intent);
             }
 
