@@ -24,11 +24,11 @@
         android:id="@+id/text_view_id"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
+        android:layout_centerHorizontal="true"
         android:layout_weight="1"
+        android:width="0dp"
         android:gravity="center"
         android:includeFontPadding="false"
-        android:layout_centerHorizontal="true"
-        android:width="0dp"
         android:text="HELLO WORLD YOU'RE LOGGED IN"
         android:textColor="#000"
         tools:layout_editor_absoluteY="3dp" />
@@ -40,6 +40,5 @@
         android:layout_gravity="bottom|end"
         android:layout_margin="@dimen/fab_margin"
         app:srcCompat="@android:drawable/ic_dialog_email" />
-
 
 </android.support.design.widget.CoordinatorLayout>

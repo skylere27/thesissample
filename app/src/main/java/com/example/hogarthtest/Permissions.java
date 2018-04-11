@@ -7,14 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class Permissions extends AppCompatActivity {
 
     Button hide;
     Button show;
-
-    int userTotal = 0;
-    int userTurnTotal = 0;
+    TextView permText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +36,8 @@ public class Permissions extends AppCompatActivity {
             };
         });
 
+        permText = findViewById(R.id.perm);
+
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,12 +51,18 @@ public class Permissions extends AppCompatActivity {
 
     public void hide(View view) {
         // disables hide button (view)
+        hide.setEnabled(false);
+        show.setEnabled(true);
         // hides the permission text
+        permText.setVisibility(View.INVISIBLE);
     }
 
     public void show(View view) {
         // disables show button (view)
+        show.setEnabled(false);
+        hide.setEnabled(true);
         // hides the permission text
+        permText.setVisibility(View.VISIBLE);
     }
 
 }

@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 // THIS IS THE CALL TO ACCESS PERMISSIONS
                 LoginManager.getInstance().logInWithReadPermissions(MainActivity.this, Arrays.asList("public_profile"));
                 // want to access more permissions???
-                Intent intent = new Intent(MainActivity.this, Permissions.class); // goes to Permissions
+                Intent intent = new Intent(MainActivity.this, Home.class); // goes to Home
                 startActivity(intent);
             };
         });
